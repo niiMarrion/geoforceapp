@@ -6,7 +6,7 @@ REST service for geoforce app
 - Java
 - Maven
 - Docker
-- Spring Initiliazr (e.g. in Spring Initializr Extension in VsCode or https://start.spring.io/)
+
 
 # Start Commands for docker-compose file
 Builds, (re)creates, starts, and attaches to containers for a service.  
