@@ -13,7 +13,6 @@ public interface AdvertisementRepository extends JpaRepository<Advertisement, Lo
 
     List<Advertisement> findAdvertisementByLocation_LatitudeAndLocation_Longitude(Double Latitude, Double Longitude);
 
-    Optional<Advertisement> findByDistance(BigDecimal latitude, BigDecimal Longitude);
 
     void deleteByLocationId(Long locationId);
 

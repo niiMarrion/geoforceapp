@@ -32,7 +32,7 @@ public class AdvertisementController {
         return new ResponseEntity<>(_advertisments, HttpStatus.OK);
     }
 
-    @GetMapping("advertisement/{id}")
+    @GetMapping("/advertisement/{id}")
     public ResponseEntity<HttpStatus> findAdvertisement(@PathVariable("id") long id) {
         advertisementService.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
