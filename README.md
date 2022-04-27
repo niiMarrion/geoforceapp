@@ -2,31 +2,91 @@
 REST service for geoforce app
 
 
-# You need
-- Java
-- Maven
-- Docker
+## How it works:
+### **1. Docker. First, you need to install docker**
+* Download Docker [Here](https://docs.docker.com/docker-for-windows/install/). Hint: Enable Hyper-V feature on windows and restart;
+* Then open powershell and check:
+```bash
+docker info
+```
+or check docker version
+```bash
+docker -v
+```
+or docker compose version
+```bash
+docker-compose -v
+```
+### **2. Spring boot app**
+* Clone the repository:
+```bash
+git clone https://github.com/OKaluzny/spring-boot-docker-postgres.git
+```
+* Build the maven project:
+```bash
+mvn clean install
+```
+* Running the containers:
+  
+This command will build the docker containers and start them.
+```bash
+docker-compose up
+```
+or
+
+This is a similar command as above, except it will run all the processes in the background.
+```bash
+docker-compose -f docker-compose.yml up
+```
+
+Appendix A.
+
+All commands should be run from project root (where docker-compose.yml locates)
+
+* If you have to want to see running containers. Checklist docker containers
+```bash
+docker container list -a
+```
+or
+```bash
+docker-compose ps
+```
+
+![Screenshot docker containers list](/images/screenshot1.png)
+*Screenshot with runnings containers*
 
 
-# Start Commands for docker-compose file
-Builds, (re)creates, starts, and attaches to containers for a service.  
-`docker-compose up`
+Go to [http://localhost:8088/demo/api/automobiles](http://localhost:8088/demo/api/automobiles) to test and would specify OAuth 2.0 authorization redirect a username: `oleg` and password: `admin` 
 
-# Start Commands for Docker
-Please follow the 1st Video, because due to docker-compose there are some changes  
+* GET request to `/api/locations/` returns a list of "locations";
+* GET request to `/api/locations/1` returns the "location" with ID 1;
+* POST request to `/api/locations/` with a "location" object as JSON creates a new "location";
+* PUT request to `/api/locations/3` with a "location" object as JSON updates the "location" with ID 3;
+* DELETE request to `/api/locations/4` deletes the "location" with ID 4;
+* DELETE request to `/api/locations/` deletes all the "locations".
+* GET request to `/api/advertisement/{latitude}/{longitude}` returns a list of "advertisement by longitude and latitude";
+*  GET request to `/api//advertisement/{id}` returns the "advertisement" with ID 1;
+*   DELETE request to `/api/advertisement/{id}' deletes the "advertisement" with ID ;
+*   PUT request to `/api/advertisement/{id}3` with a "advertisement" object as JSON updates the "advertisement" with ID ;
+*   POST request to `/api//location/{locationId}/advertisement` with an "advertisement" object as JSON creates a new "advertisement";
 
-Build your image:  
-`docker build <your path> -t <<user>/project-name>`  
 
-Run:  
-`docker run -p 8080:3000 <<user>/project-name>`  
 
-For Example:  
-`docker build <your path> -t thomas-oliver/sb-dockerized`  
-`docker run -p 8080:3000 thomas-oliver/sb-dockerized`  
 
-Basic Docker Commands:  
-List your docker images: `docker images`  
-List your running containers: `docker ps`  
-List also stopped containers: `docker ps -a`
-Kill a running container: `docker kill <id of container from docker ps (first 3 letters)>`, eg `docker kill fea`
+### **4. Docker control commands**
+* Check all the images you have:
+```bash
+docker images
+```
+### **5. End stop app**
+*  Stop containers:
+```bash
+docker-compose down
+```
+* Remove old stopped containers of docker-compose
+```bash
+docker-compose rm -f
+```
+
+
+
