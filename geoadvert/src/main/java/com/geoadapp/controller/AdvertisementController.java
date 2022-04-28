@@ -23,7 +23,7 @@ public class AdvertisementController {
     @Autowired
     private LocationService locationService;
 
-    @GetMapping("advertisement/{latitude}/{longitude}")
+    @GetMapping("/advertisement/{latitude}/{longitude}")
     public ResponseEntity<List<Advertisement>> getAllAdvertisementByLatitudeAndLongitude(@PathVariable(value = "latitude")Double latitude, @PathVariable(value = "longitude")Double longitude){
         List<Advertisement> _advertisments = advertisementService.findByLatitudeAndLongitude(latitude, longitude);
         if (_advertisments.isEmpty()){
