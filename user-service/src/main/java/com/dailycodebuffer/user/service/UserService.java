@@ -31,7 +31,7 @@ public class UserService {
         User user = userRepository.findByUserId(userId);
         log.info(user.toString());
         Department department =
-                restTemplate.getForObject("http://localhost:9001/departments/" + user.getDepartmentId()
+                restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId()
                                 , Department.class);
 
         vo.setUser(user);
