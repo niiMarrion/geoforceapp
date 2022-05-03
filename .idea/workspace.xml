@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36a6dcfc-b6d1-4219-9397-9a5ee5876065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/geoadvert/src/test/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="28Dc1Eu5oUeSLE4v25ZXci8IzX8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/geoadvert" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GeoadvertApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="geoforceapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.geoadvert.GeoadvertApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36a6dcfc-b6d1-4219-9397-9a5ee5876065" name="Default Changelist" comment="" />
+      <created>1650754379681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650754379681</updated>
+      <workItem from="1650754384970" duration="584000" />
+      <workItem from="1650755647149" duration="143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1180" y="219" key="FileChooserDialogImpl" timestamp="1650755787825">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1180" y="219" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1650755787825" />
+    <state x="1065" y="230" key="NewModule_or_Project.wizard" timestamp="1650754548931">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1065" y="230" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1650754548931" />
+    <state x="880" y="100" key="SettingsEditor" timestamp="1650755775086">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="880" y="100" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1650755775086" />
+    <state x="685" y="186" key="new project wizard" timestamp="1650754967560">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="685" y="186" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1650754967560" />
+  </component>
+</project>
